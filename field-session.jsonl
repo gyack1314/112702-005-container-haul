@@ -1,4 +1,4 @@
-{"at":0,"actor":"ops","kind":"station_map","body":{"stations":{"A":{"pickup":[15,60],"floor_tare_kg":2},"B":{"pickup":[26,90],"floor_tare_kg":3}},"bins":{"k1":{"tare_kg":40,"limit_kg":150},"k2":{"tare_kg":42,"limit_kg":150},"k3":{"tare_kg":35,"limit_kg":90}},"trucks":{"van1":{"limit_kg":140},"van2":{"limit_kg":220}}}}
+{"at":0,"actor":"ops","kind":"station_map","body":{"stations":{"A":{"pickup":[15,60],"floor_tare_kg":2},"B":{"pickup":[26,90],"floor_tare_kg":3}},"bins":{"k1":{"tare_kg":40,"limit_kg":150},"k2":{"tare_kg":42,"limit_kg":150},"k3":{"tare_kg":35,"limit_kg":90}},"trucks":{"van1":{"limit_kg":123},"van2":{"limit_kg":220}}}}
 {"at":2,"actor":"A","kind":"present","body":{"frame":"a1","boot":"b1","observed":[2,2],"present":true,"tags":["k1"],"phase":"idle","stable":true,"gross_kg":[130,136]}}
 {"at":3,"actor":"B","kind":"present","body":{"frame":"b1","boot":"z1","observed":[2,3],"present":true,"tags":["k3"],"phase":"idle","stable":true,"gross_kg":[68,73]}}
 {"at":7,"actor":"A","kind":"present","body":{"frame":"a2","boot":"b1","observed":[7,7],"present":true,"tags":["k1"],"phase":"compress","stable":false,"gross_kg":[192,210]}}
@@ -13,6 +13,7 @@
 {"at":31,"actor":"A","kind":"present","body":{"frame":"a3","boot":"b1","observed":[20,21],"present":true,"tags":["k1"],"phase":"idle","stable":true,"gross_kg":[140,144]}}
 {"at":33,"actor":"van1","kind":"claim","body":{"route":"van1-run","station":"B","bin":"k1","request":"j2"}}
 {"at":34,"actor":"ops","kind":"schedule","body":{"route":"van2-run","truck":"van2","stations":["B"],"window":[34,75]}}
+{"at":35,"actor":"van1","kind":"claim","body":{"route":"van1-run","station":"B","bin":"k3","request":"j4"}}
 {"at":36,"actor":"recycler","kind":"unload","body":{"truck":"van2","bin":"k1","custody_ref":"drive-5","net_kg":84,"receipt":"w1"}}
 {"at":38,"actor":"recycler","kind":"unload","body":{"truck":"van2","bin":"k1","custody_ref":"drive-5","net_kg":84,"receipt":"w1"}}
 {"at":40,"actor":"ops","kind":"inspect","body":{"stations":["A","B"],"bins":["k1","k2","k3"],"trucks":["van1","van2"]}}
