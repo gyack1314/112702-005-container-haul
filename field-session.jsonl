@@ -5,6 +5,7 @@
 {"at":9,"actor":"A","kind":"disconnect","body":{}}
 {"at":15,"actor":"ops","kind":"schedule","body":{"route":"van1-run","truck":"van1","stations":["A","B"],"window":[15,58]}}
 {"at":16,"actor":"van1","kind":"claim","body":{"route":"van1-run","station":"A","bin":"k1","request":"j1"}}
+{"at":16,"actor":"van1","kind":"claim","body":{"route":"van1-run","station":"B","bin":"k3","request":"j3"}}
 {"at":17,"actor":"ops","kind":"hold","body":{"station":"A","bin":"k1","window":[17,26],"reason":"检查压头"}}
 {"at":19,"actor":"van1","kind":"arrive","body":{"request":"j1","station":"A"}}
 {"at":28,"actor":"van2","kind":"transfer","body":{"from":"A","to":"B","bin":"k1","replacement":"k2","observed":[26,28],"custody_ref":"drive-5"}}
